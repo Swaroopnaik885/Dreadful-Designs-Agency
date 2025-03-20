@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="FeedBack.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="Images\Vector0.png">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js" integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <title>Inquiry</title>
+    </head>
+    <body class="w-[100vw] h-auto m-0 p-0 box-0 select-none scroll-smooth bg-black">
+        <div id="main1" class="w-full h-auto flex flex-col z-[1] overflow-hidden pb-5">
+            <div id="trans" class="overflow-hidden w-full h-[15vw] md:h-[10vw]">
+                <img src="Images\Vector.png" draggable="false" alt="Logo" id="Logo" class="w-[25vw] md:w-[17.5vw] z-1 my-[5vw] md:my-[2.5vw] mx-[5vw] md:mx-[4vw]">
+            </div>
+            <div class="gap-[4vw] py-[0.5vw] px-[3vw] rounded-[5vw] md:rounded-[2vw] z-8 absolute flex items-center w-auto top-[3.5vw] md:top-[2vw] right-[2vw] md:right-[3vw] text-[1.25vw] md:text-[1vw] font-bold decoration-[0.15vw] md:decoration-[0.5vw] decoration-solid decoration-black font-['Inter'] bg-gray-200 bg-opacity-50 underline-offset-[0.5vw] md:underline-offset-[0.2vw]" id="nav">
+                <h2 id="nave1" class="cursor-pointer hover:underline decoration-[0.15vw] md:decoration-[0.1vw] decoration-solid decoration-black underline-offset-[0.5vw] md:underline-offset-[0.2vw]">HOME</h2>
+                <h2 id="nave2" class="cursor-pointer hover:underline decoration-[0.15vw] md:decoration-[0.1vw] decoration-solid decoration-black underline-offset-[0.5vw] md:underline-offset-[0.2vw]">ABOUT</h2>
+                <h2 id="nave3" class="cursor-pointer hover:underline decoration-[0.15vw] md:decoration-[0.1vw] decoration-solid decoration-black underline-offset-[0.5vw] md:underline-offset-[0.2vw]">PROJECT PAGE</h2>
+                <h2 id="nave4" class="cursor-pointer underline decoration-[0.15vw] md:decoration-[0.1vw] decoration-solid decoration-black underline-offset-[0.5vw] md:underline-offset-[0.2vw]">INQUIRY</h2>
+            </div>
+            <div id="con" class="w-full h-auto flex flex-col justify-center items-center gap-3">
+                <h3 class="text-white text-[7vw] md:text-[2.5vw] font-semibold italic font-['Mohave']">YOUR INQUIRY</h3>
+                <div id="feed-form" class="w-[90vw] md:w-[50vw] flex flex-col justify-center items-center border-[0.1vw] border-solid border-white rounded-[3vw] md:rounded-[1vw] p-5 md:p-10 text-white font-['Mohave'] gap-5">
+                    <div id="name" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Enter Your Name :</h2>
+                        <input type="text" name="name" id="name" placeholder="Name" autocomplete="off" maxlength="40" required class="w-full h-[7vw] md:h-[3.5vw] bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] mt-[1vw] px-2 md:px-4 placeholder:text-gray-700 text-[4vw] md:text-[1.5vw] font-medium">
+                    </div>
+                    <div id="email" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Email Address :</h2>
+                        <input type="email" name="name" id="email" autocomplete="email" placeholder="example@example.com" required class="w-full h-[7vw] md:h-[3.5vw] bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] mt-[1vw] px-2 md:px-4 placeholder:text-gray-700 text-[4vw] md:text-[1.5vw] font-medium">
+                    </div>
+                    <div id="number" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Phone Number :</h2>
+                        <input type="text" name="name" id="pnumber" autocomplete="off" required placeholder="+91 000 000 0000" class="w-full h-[7vw] md:h-[3.5vw] bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] mt-[1vw] px-2 md:px-4 placeholder:text-gray-700 text-[4vw] md:text-[1.5vw] font-medium" oninput="validatePhone(this)">
+                    </div>
+                    <div id="subject" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Subject :</h2>
+                        <input type="text" name="name" id="subject" placeholder="e.g., 'Website Redesign'" autocomplete="off" maxlength="40" required class="w-full h-[7vw] md:h-[3.5vw] bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] mt-[1vw] px-2 md:px-4 placeholder:text-gray-700 text-[4vw] md:text-[1.5vw] font-medium">
+                    </div>
+                    <div id="aboutUs" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>How did you hear about us ?</h2>
+                        <div id="select" name="select" class="w-full h-[7vw] md:h-[3.5vw] bg-black border-[0.1vw] border-solid border-white rounded-[1.5vw] mt-[1vw] px-2 md:px-4 cursor-pointer flex jusify-center items-center">
+                            <select id="options" name="options" class="w-full bg-transparent cursor-pointer text-gray-700 text-[4vw] md:text-[1.5vw] font-medium">
+                                <option value="linkedin" class="bg-black text-white text-[3vw] md:text-[1.5vw]">Linked In</option>
+                                <option value="youtube" class="bg-black text-white text-[3vw] md:text-[1.5vw]">YouTube</option>
+                                <option value="instagram" class="bg-black text-white text-[3vw] md:text-[1.5vw]">Instagram</option>
+                                <option value="twitter" class="bg-black text-white text-[3vw] md:text-[1.5vw]">Twitter</option>
+                                <option value="friends" class="bg-black text-white text-[3vw] md:text-[1.5vw]">Through a Friend</option>
+                            </select>
+                            <i id="arrowD" class="ri-arrow-down-s-line"></i>
+                            <i id="arrowU" class="ri-arrow-up-s-line hidden"></i>
+                        </div>
+                    </div>
+                    <div id="message" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Message :</h2>
+                        <textarea id="Message"  placeholder="Message" class="w-full h-[25vw] md:h-[7vw] bg-transparent border-[0.1vw] border-solid border-white px-2 md:px-4 rounded-[1.5vw] mt-[1vw] placeholder:text-gray-700 text-[4vw] md:text-[1.5vw] py-2 font-medium resize-none overflow-auto focus:outline-none"></textarea>
+                    </div>
+                    <div id="Con-method" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Preferred Contact Method :</h2> 
+                        <div class="opt-group flex flex-col md:flex-row space-x-0 md:space-x-6 text-white mt-2">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="contact" value="Email" class="hidden peer" autocomplete="off">
+                                <div class="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center bg-black">
+                                    <div class="dot w-3 h-3 bg-white rounded-full hidden"></div>
+                                </div>
+                                <span class="text-[rgba(140,140,140,1)]">Email</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="contact" value="Phone" class="hidden peer" autocomplete="off">
+                                <div class="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center bg-black">
+                                    <div class="dot w-3 h-3 bg-white rounded-full hidden"></div>
+                                </div>
+                                <span class="text-[rgba(140,140,140,1)]">Phone</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="contact" value="No Preference" class="hidden peer" autocomplete="off">
+                                <div class="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center bg-black">
+                                    <div class="dot w-3 h-3 bg-white rounded-full hidden"></div>
+                                </div>
+                                <span class="text-[rgba(140,140,140,1)]">No Preference</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div id="Con-method" class="w-full h-auto text-[5vw] md:text-[1.3vw] mt-2">
+                        <h2>Urgency : <span class="text-[rgba(140,140,140,1)]">(Optional)</span></h2> 
+                        <div class="opt-group flex flex-col md:flex-row space-x-0 md:space-x-6 text-white mt-2">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="urgency" value="Not Urgent" class="hidden peer" autocomplete="off">
+                                <div class="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center bg-black">
+                                    <div class="dot w-3 h-3 bg-white rounded-full hidden"></div>
+                                </div>
+                                <span class="text-[rgba(140,140,140,1)]">Not urgent</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="urgency" value="Somewhat Urgent" class="hidden peer" autocomplete="off">
+                                <div class="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center bg-black">
+                                    <div class="dot w-3 h-3 bg-white rounded-full hidden"></div>
+                                </div>
+                                <span class="text-[rgba(140,140,140,1)]">Somewhat urgent</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="urgency" value="Very Urgent" class="hidden peer" autocomplete="off">
+                                <div class="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center bg-black">
+                                    <div class="dot w-3 h-3 bg-white rounded-full hidden"></div>
+                                </div>
+                                <span class="text-[rgba(140,140,140,1)]">Very urgent</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="inter" class="w-full flex flex-col md:flex-row h-auto text-[5vw] md:text-[1.3vw] gap-3">
+                        <div class="w-80 h-auto flex flex-col md:flex-col items-start justify-start cursor-pointer hover:border-gray-300 transition-all" onclick="document.getElementById('fileInput').click()">
+                            <h2>File Upload : <span class="text-[rgba(140,140,140,1)]">(Optional)</span></h2>
+                            <div id="file-upload" class="w-[60vw] md:w-[17.5vw] h-[30vw] md:h-[3.5vw] justify-around px-5 items-center flex bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] px-2 md:px-4 mt-[1vw]">
+                                <input type="file" id="fileInput" class="hidden">
+                                <p class="text-gray-400 text-sm mt-2 self-center justify-self-center mb-2">File or Photo Name </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m14-7l-5-5l-5 5m5-5v12"/></svg>
+                            </div>
+                        </div>
+                        <div id="date" class="w-full md:w-[20vw]">
+                            <h2>MM/DD/YYYY :</h2>
+                            <input type="date" name="date" id="dateInput" required class=" w-[42vw] md:w-[15vw] h-[7vw] md:h-[3.5vw] bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] p-1 px-7 pr-6 self-center justify-self-center mt-[1vw] text-[4vw] md:text-[1.5vw] text-white custom-date">
+                        </div>
+                    </div>
+                    <button type="submit" id="YIsubmit" class="w-[37.5vw] md:w-[18vw] h-[6vw] md:h-[3vw] border-[0.1vw] rounded-[5vw] md:rounded-[1.5vw]] mt-5 hover:bg-white hover:text-black">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottomContact mt-[10vw]" id="bottomContact">
+            <div class="BTT" id="BTT">
+                <h2>BACK TO TOP</h2>
+            </div>
+            <div class="bottomLinks" id="bottomLinks">
+                <div class="bottomContent" id="bottomContent">
+                    <div class="GTK" id="GTK">
+                        <h2>Get to Know Us</h2>
+                        <h3>About Company</h3>
+                        <h3>Press release archive</h3>
+                        <h3>Careers</h3>
+                    </div>
+                    <div class="GWU" id="GWU">
+                        <h2>Connect with Us</h2>
+                        <h3>Discord</h3>
+                        <h3>Instagram</h3>
+                        <h3>Twitter</h3>
+                        <h3>Linked in</h3>
+                    </div>
+                    <div class="LUHY" id="LUHY">
+                        <h2>Let Us Help You</h2>
+                        <h3  class="inquiry" id="inquiry">Your inquiry</h3>
+                        <h3>Help</h3>
+                        <h2 class="fbLink" id="fbLink">Feedback-></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="webName" id="webName">
+                <div class="nameContent" id="nameContent">
+                    <h3>Dreadful Designs Agency</h3>
+                </div>
+            </div>
+        </div>
+        <script src="Inquiry.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,417 @@
+/* Importing Google Fonts (consolidated to avoid duplicates) */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jolly+Lodger&family=Kings&family=Neonderthaw&family=Nosifer&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Jolly+Lodger&family=Kings&family=Neonderthaw&family=Nosifer&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Mohave:ital,wght@0,300..700;1,300..700&family=Nosifer&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+.clip-star {
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 
+    68% 57%, 79% 91%, 50% 70%, 
+    21% 91%, 32% 57%, 2% 35%, 
+    39% 35%
+  );
+}
+.custom-date::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.DYP {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 5vw;
+}
+.DYP-con {
+  position: relative;
+  padding: 3vw 0 2vw 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  gap: 0.5vw;
+  color: white;
+  border: 0.2vw solid white;
+  border-radius: 1.5vw;
+  font-family: 'Mohave', sans-serif;
+  z-index: 2;
+  background-color: rgb(14, 14, 14);
+  overflow: hidden;
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.6);
+}
+.are-red { color: red;}
+.who-green { color: greenyellow;}
+
+.DYP-con h2 {
+  font-weight: 500;
+}
+.DYP-con h4{
+  font-size: 1vw;
+  font-weight: 500;
+}
+.DYP-con .con-btn {
+  margin-top: 1vw;
+  display: flex;
+  gap: 1.75vw;
+}
+.con-btn .Con-Me {
+  color: black;
+  border: dashed 0.11vw;
+  border-radius: 1.5vw;
+  width: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5vw;
+  gap: 0.25vw;
+  font-family: 'Mohave', sans-serif;
+  background-color: rgb(240,240,240);
+}
+
+.Con-Me h3 {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+.con-btn .Quick-CHat {
+  color: black;
+  border-radius: 1.5vw;
+  border: none;
+  width: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5vw;
+  gap: 0.25vw;
+  font-family: 'Mohave', sans-serif;
+  background-color: rgb(240,240,240);
+}
+.Quick-CHat h3 {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+.red-Circle {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-color: black;
+  border: 0.5vw solid rgba(255, 0, 0, 0.808);
+  border-radius: 50%;
+  margin-top: -8vw;
+  margin-left: 50vw;
+  z-index: 1;
+  filter: blur(3px);
+}
+.green-Circle {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-color: black;
+  border: 0.5vw solid green;
+  border-radius: 50%;
+  margin-top: 2vw;
+  margin-left: -45vw;
+  z-index: 1;
+  filter: blur(2px);
+}
+
+
+
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+}
+
+textarea{
+  scrollbar-width: none;
+}
+
+
+
+.bottomContact{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, black 80%, rgba(41, 42, 45, 1));
+  margin-top: 5vw;
+}
+.BTT{
+  padding: 0.75vw 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgb(44, 40, 40);
+  cursor: pointer;
+}
+.BTT h2{
+  font-size: 1.25vw;
+  font-weight: 600;
+  letter-spacing: 0.075vw;
+  color: white;
+  font-style: italic;
+  font-family: 'Mohave', sans-serif;
+}
+.bottomLinks{
+  padding:0vw;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomContent{
+  padding: 1vw 0vw;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 12.5vw;
+  border-bottom: 0.1vw solid white;
+}
+.bottomContent .GTK, .GWU, .LUHY{
+  padding: 0.2vw;
+}
+.bottomContent .GTK h2, .GWU h2, .LUHY h2{
+  color: white;
+  font-size: 0.9vw;
+  letter-spacing: 0.05vw;
+  font-weight: 300;
+  font-family: 'Jockey One', sans-serif;
+  padding: 1vw 0vw;
+  cursor: pointer;
+}
+.bottomContent .GTK h3, .GWU h3, .LUHY h3{
+  color: rgba(255, 255, 255, 0.801);
+  padding: 0.85vw 0vw;
+  font-size: 0.8vw;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+.bottomContent .GTK h3:hover, .GWU h3:hover, .LUHY h3:hover{
+  text-decoration: underline 0.05vw white;
+  text-underline-offset: 0.25vw;
+}
+.fbLink:hover{
+  text-decoration: underline 0.1vw white;
+  text-underline-offset: 0.25vw;
+  cursor: pointer;
+}
+.webName{
+  padding: 1vw 0vw;
+  width: auto;
+  padding-bottom: 7.5vw;
+}
+.nameContent{
+  padding: 0.5vw 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.nameContent h3{
+  font-family: 'Jolly Lodger', cursive;
+  font-weight: 700;
+  font-size: 2.5vw;
+  -webkit-text-stroke: 0.005vw rgb(0, 0, 0);
+  background-image: linear-gradient(to bottom, rgb(217, 213, 209), rgb(152, 152, 152), rgb(0, 0, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -0.1vw;
+}
+
+
+
+.custom-date::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="radio"] {
+display: none;
+}
+
+.custom-radio {
+display: flex;
+align-items: center;
+cursor: pointer;
+font-size: 18px;
+color: white;
+margin-bottom: 10px;
+}
+
+.custom-radio .radio-circle {
+width: 20px;
+height: 20px;
+border: 2px solid white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 8px;
+transition: all 0.3s ease;
+}
+
+.custom-radio .radio-circle::after {
+content: "";
+width: 10px;
+height: 10px;
+background: white;
+border-radius: 50%;
+transform: scale(0);
+transition: transform 0.3s ease;
+}
+
+input[type="radio"]:checked + .radio-circle::after {
+transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) { /* Mobile phones */
+  .DYP-con {
+    padding: 4vw 0 3vw 0;
+    width: 80vw;
+    height: 25vw;
+    gap: 1vw;
+    margin-bottom: 5vw;
+  }
+  .DYP-con h2 {
+    font-size: 4.5vw;
+    z-index: 4;
+  }
+  .DYP-con h4{
+    font-size: 2vw;
+    z-index: 4;
+  }
+  .DYP-con .con-btn {
+    gap: 2vw;
+  }
+  .con-btn .Con-Me {
+    border: dashed 0.11vw;
+    width: 11vw;
+    height: 3vw;
+    gap: 0.5vw;
+  }
+  .Con-Me h3 {
+    font-size: 1.5vw;
+  }
+  .Con-Me i {
+    font-size: 2vw;
+  }
+  .con-btn .Quick-CHat {
+    width: 11vw;
+    height: 3vw;
+    gap: 0.5vw;
+  }
+  .Quick-CHat h3 {
+    font-size: 1.5vw;
+  }
+  .Quick-CHat i {
+    font-size: 2.5vw;
+  }
+  .red-Circle {
+    width: 20vw;
+    height: 20vw;
+    border: 1vw solid rgba(255, 0, 0, 0.808);
+    margin-top: -10vw;
+    margin-left: 80vw;
+    filter: blur(5px);
+  }
+  .green-Circle {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border: 1vw solid green;
+    margin-top: 6vw;
+    margin-left: -70vw;
+    z-index: 0;
+    filter: blur(5px);
+  }
+  .BTT{
+    padding: 1vw 0vw;
+  }
+  .BTT h2{
+    font-size: 2.5vw;
+    letter-spacing: 0.1vw;
+  }
+  .bottomContent{
+    padding: 2vw 0vw;
+    gap: 17.5vw;
+  }
+  .bottomContent .GTK, .GWU, .LUHY{
+    padding: 0.5vw; 
+  }
+  .bottomContent .GTK h2, .GWU h2, .LUHY h2{
+    font-size: 2vw;
+    letter-spacing: 0.1vw;
+  }
+  .bottomContent .GTK h3, .GWU h3, .LUHY h3{
+    padding: 1vw 0vw;
+    font-size: 1.8vw;
+  }
+  .bottomContent .GTK h3:hover, .GWU h3:hover, .LUHY h3:hover{
+    text-decoration: underline 0.1vw white;
+    text-underline-offset: 0.5vw;
+  }
+  .fbLink:hover{
+    text-decoration: underline 0.2vw white;
+    text-underline-offset: 0.5vw;
+  }
+  .webName{
+    padding: 2vw 0vw;
+    width: auto;
+    padding-bottom: 5vw;
+  }
+  .nameContent{
+    padding: 1vw 0vw;
+    gap: 2vw;
+  }
+  .nameContent h3{
+    font-size: 3.5vw;
+    -webkit-text-stroke: 0.01vw rgb(0, 0, 0);
+    letter-spacing: 0.1vw;
+  }
+}

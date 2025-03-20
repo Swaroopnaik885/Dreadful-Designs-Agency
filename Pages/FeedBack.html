@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="FeedBack.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="Images\Vector0.png">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js" integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <title>FeedBack</title>
+    </head>
+    <body class="w-[100vw] h-auto m-0 p-0 box-0 select-none scroll-smooth bg-black">
+        <div id="main1" class="w-full h-auto flex flex-col z-[1] overflow-hidden pb-5">
+            <div id="trans" class="overflow-hidden w-full h-[15vw] md:h-[10vw]">
+                <img src="Images\Vector.png" draggable="false" alt="Logo" id="Logo" class="w-[25vw] md:w-[17.5vw] z-1 my-[5vw] md:my-[2.5vw] mx-[5vw] md:mx-[4vw]">
+            </div>
+            <button id="back-button" class="w-[3vw] h-[3vw] bg-[rgba(255,232,182,0.5)] rounded-full top-[3vw] right-[3vw] absolute flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M20 11v2H8l5.5 5.5l-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5L8 11z"/></svg>
+            </button>
+            <div id="con" class="w-full h-auto flex flex-col justify-center items-center gap-3 mt-5">
+                <h3 class="text-white text-[7vw] md:text-[2.5vw] font-semibold italic font-['Mohave']">YOUR FEEDBACK</h3>
+                <div id="feed-form" class="w-[90vw] md:w-[50vw] flex flex-col justify-center items-center border-[0.1vw] border-solid border-white rounded-[3vw] md:rounded-[1vw] p-5 md:p-10 text-white font-['Mohave'] gap-5">
+                    <div id="name" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Enter Your Name :</h2>
+                        <input type="text" name="name" id="name" required autocomplete="off" placeholder="Name" maxlength="60" class="w-full h-[7vw] md:h-[3.5vw] bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] mt-[1vw] px-2 md:px-4 placeholder:text-gray-700 text-[4vw] md:text-[1.5vw] font-medium">
+                    </div>
+                    <div id="dateRate" class="w-full flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 h-auto text-[5vw] md:text-[1.3vw] gap-0 md:gap-3">
+                        <div id="date" class="w-[42vw] md:w-[20vw]">
+                            <h2>MM/DD/YYYY :</h2>
+                            <input type="date" name="date" id="dateInput" class=" w-full md:w-[15vw] h-[7vw] md:h-[3.5vw] bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] p-1 px-7 pr-6 self-center justify-self-center mt-[1vw] text-[4vw] md:text-[1.5vw] text-white custom-date">
+                        </div>
+                        <div id="rating" class="">
+                            <h2 class="text-[5vw] md:text-lg font-semibold mb-2">Ratings:</h2>
+                            <div class="flex space-x-3 md:space-x-6 bg-black">
+                                <div class="w-8 h-8 bg-white clip-star cursor-pointer relative"><div class="absolute w-7 md:w-6 h-7 md:h-6 bg-transparent rounded-full shadow-[0_0_0_100vw_black] mt-[0.5vw] md:mt-[0.4vw] ml-[0.5vw] md:ml-[0.35vw]"></div></div>
+                                <div class="w-8 h-8 bg-white clip-star cursor-pointer relative"><div class="absolute w-7 md:w-6 h-7 md:h-6 bg-transparent rounded-full shadow-[0_0_0_100vw_black] mt-[0.5vw] md:mt-[0.4vw] ml-[0.5vw] md:ml-[0.35vw]"></div></div>
+                                <div class="w-8 h-8 bg-white clip-star cursor-pointer relative"><div class="absolute w-7 md:w-6 h-7 md:h-6 bg-transparent rounded-full shadow-[0_0_0_100vw_black] mt-[0.5vw] md:mt-[0.4vw] ml-[0.5vw] md:ml-[0.35vw]"></div></div>
+                                <div class="w-8 h-8 bg-white clip-star cursor-pointer relative"><div class="absolute w-7 md:w-6 h-7 md:h-6 bg-transparent rounded-full shadow-[0_0_0_100vw_black] mt-[0.5vw] md:mt-[0.4vw] ml-[0.5vw] md:ml-[0.35vw]"></div></div>
+                                <div class="w-8 h-8 bg-white clip-star cursor-pointer relative"><div class="absolute w-7 md:w-6 h-7 md:h-6 bg-transparent rounded-full shadow-[0_0_0_100vw_black] mt-[0.5vw] md:mt-[0.4vw] ml-[0.5vw] md:ml-[0.35vw]"></div></div>
+                              </div>
+                        </div>
+                    </div>
+                    <div id="aboutUs" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>How did you hear about us ?</h2>
+                        <div id="select" class="w-full h-[7vw] md:h-[3.5vw] bg-black border-[0.1vw] border-solid border-white rounded-[1.5vw] mt-[1vw] px-2 md:px-4 cursor-pointer flex jusify-center items-center">
+                            <select id="options" name="options" required class="w-full bg-transparent cursor-pointer text-gray-700 text-[4vw] md:text-[1.5vw] font-medium">
+                                <option value="youtube" class="bg-black text-white text-[3vw] md:text-[1.5vw]">YouTube</option>
+                                <option value="instagram" class="bg-black text-white text-[3vw] md:text-[1.5vw]">Instagram</option>
+                                <option value="twitter" class="bg-black text-white text-[3vw] md:text-[1.5vw]">Twitter</option>
+                                <option value="linkedin" class="bg-black text-white text-[3vw] md:text-[1.5vw]">Linked In</option>
+                                <option value="friends" class="bg-black text-white text-[3vw] md:text-[1.5vw]">Through a Friend</option>
+                            </select>
+                            <i id="arrowD" class="ri-arrow-down-s-line"></i>
+                            <i id="arrowU" class="ri-arrow-up-s-line hidden"></i>
+                        </div>
+                        
+                    </div>
+                    <div id="feedback" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Feedback : </h2> 
+                        <textarea id="FB" required placeholder="Enter Your Feedback" class="w-full h-[25vw] md:h-[7vw] bg-transparent border-[0.1vw] border-solid border-white px-2 md:px-4 rounded-[1.5vw] mt-[1vw] placeholder:text-gray-700 text-[4vw] md:text-[1.5vw] py-2 font-medium resize-none overflow-auto focus:outline-none"></textarea>
+                    </div>
+                    <div id="suggest" class="w-full h-auto text-[5vw] md:text-[1.3vw]">
+                        <h2>Suggestion :</h2>
+                        <input type="text" required id="Suggext" placeholder="Suggest" class="w-full h-[7vw] md:h-[3.5vw] bg-transparent border-[0.1vw] border-solid border-white rounded-[1.5vw] px-2 md:px-4 mt-[1vw] placeholder:text-gray-700 text-[4vw] md:text-[1.5vw] font-medium">
+                    </div>
+                    <button type="submit" class="w-[37.5vw] md:w-[18vw] h-[6vw] md:h-[3vw] border-[0.1vw] rounded-[5vw] md:rounded-[1.5vw] mt-5 hover:bg-white hover:text-black">Submit Feedback</button>
+                </div>
+            </div>
+        </div>
+        <div id="feedList" class="w-full h-auto flex flex-col justify-center items-center py-5 md:py-10">
+            <h3 class="text-[7vw] md:text-[2.5vw] text-white font-['Mohave'] font-bold italic">FEEDBACK LIST</h3>
+            <ul id="feedback-list"></ul>
+            <div id="FList" class="w-[90vw] md:w-[75vw] h-auto flex flex-col justify-center itemss-center py-10"></div>
+            <button class="w-[30vw] md:w-[12.5vw] h-[10vw] md:h-[3.75vw] bg-white mt-10 text-[3.5vw] md:text-[1.2vw] font-['Mohave'] font-medium rounded-[4vw] md:rounded-[1.5vw] shadow-md shadow-stone-100/60 hover:bg-black hover:text-white hover:border-white hover:border-[0.1vw]">Show More</button>
+        </div>
+        <div class="DYP" id="DYP">
+            <div class="DYP-con" id="DYP-con">
+                <h2>Let’s <span class="are-red">Discuss</span> Your <span class="who-green">Project</span></h2>
+                <h4>I’m always open to discussing product design work or partnership opportunities.</h4>
+                <div class="con-btn" id="con-btn">
+                    <button type="submit" class="Con-Me">
+                        <i class="ri-phone-fill"></i>
+                        <h3>Contact Me</h3>
+                    </button>
+                    <button type="submit" class="Quick-CHat">
+                        <h3>Quick Chat</h3>
+                        <i class="ri-whatsapp-line"></i>
+                    </button>
+                </div>
+                <div class="red-Circle"></div>
+                <div class="green-Circle"></div>
+            </div>
+        </div>
+        <div class="bottomContact" id="bottomContact">
+            <div class="BTT" id="BTT">
+                <h2>BACK TO TOP</h2>
+            </div>
+            <div class="bottomLinks" id="bottomLinks">
+                <div class="bottomContent" id="bottomContent">
+                    <div class="GTK" id="GTK">
+                        <h2>Get to Know Us</h2>
+                        <h3>About Company</h3>
+                        <h3>Press release archive</h3>
+                        <h3>Careers</h3>
+                    </div>
+                    <div class="GWU" id="GWU">
+                        <h2>Connect with Us</h2>
+                        <h3>Discord</h3>
+                        <h3>Instagram</h3>
+                        <h3>Twitter</h3>
+                        <h3>Linked in</h3>
+                    </div>
+                    <div class="LUHY" id="LUHY">
+                        <h2>Let Us Help You</h2>
+                        <h3  class="inquiry" id="inquiry">Your inquiry</h3>
+                        <h3>Help</h3>
+                        <h2 class="fbLink" id="fbLink">Feedback-></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="webName" id="webName">
+                <div class="nameContent" id="nameContent">
+                    <h3>Dreadful Designs Agency</h3>
+                </div>
+            </div>
+        </div>
+        <script src="FeedBack.js" async defer></script>
+    </body>
+</html>

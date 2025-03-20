@@ -1,0 +1,1022 @@
+/* Importing Google Fonts (consolidated to avoid duplicates) */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jolly+Lodger&family=Kings&family=Neonderthaw&family=Nosifer&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Jolly+Lodger&family=Kings&family=Neonderthaw&family=Nosifer&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Mohave:ital,wght@0,300..700;1,300..700&family=Nosifer&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+  
+  
+/* Body and HTML Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+.trans {
+  overflow-x: hidden;
+  z-index: 2;
+  position: absolute;
+  
+}
+.Logo {
+  width: 17.5vw;
+  z-index: 1;
+  margin: 2vw 4vw;
+  position: relative;
+}
+.nav{
+  gap: 4vw;
+  padding: 0.5vw 3vw;
+  border-radius: 2vw;
+  z-index: 8;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: auto;
+  top: 2vw;
+  right: 4vw;
+  background: rgba(235, 235, 235, 0.5);
+  font-size: 0.7vw;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+}
+.nav h2{
+  cursor: pointer;
+}
+.nav h2:first-child{text-decoration: underline 0.1vw solid black;
+  text-underline-offset: 0.2vw;
+}
+.nav svg{
+  cursor: pointer;
+}
+.nav h2:hover{
+  text-decoration: underline 0.1vw solid black;
+  text-underline-offset: 0.2vw;
+}
+.main1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  width: 100%;
+  padding-bottom: 5vw;
+}
+.main_part{
+  margin-top: 15vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.designBox{
+  width: 37vw;  
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+  background: url('Images/Ouijaboard.png') no-repeat center;
+  background-size: 115% 112%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.1vw 0.5vw 2.5vw 1.5vw rgb(177, 4, 4);
+}
+.designText{
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  position: absolute;
+  line-height: 1.3;
+}
+.text1{
+  font-size: 4.8vw;
+  text-align: left;
+  color: white;
+  font-style: italic;
+  font-family: 'Mohave', sans-serif;
+}
+.text2{
+  font-size: 4.8vw;
+  text-align: right;
+  color: white;
+  font-style: italic;
+  font-family: 'Mohave', sans-serif;
+}
+.dis{
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 2.5vw;
+}
+.dis h2{
+  font-size: 1.6vw;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  font-style: italic;
+  font-family: 'Mohave', sans-serif;
+}
+.QA{
+  position: relative;
+  padding: 0vw 3vw;
+  display: flex;
+  gap: 2vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.ques{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.Question{
+  letter-spacing: 0.2vw;
+  font-size: 2vw;
+  text-underline-offset: 1.75vw;
+  text-decoration: underline 0.04vw;
+  font-family: "Baloo Paaji 2", serif;
+}
+.Answer{
+  line-height: 1.5;
+  margin-top: 0.75vw;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-size: 1.5vw;
+  letter-spacing: 0.1vw;
+}
+#Question4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2vw;
+}
+#Question4 h3 {
+  width: auto;
+  text-decoration: underline 0.05vw white;
+}
+#Question4 .logo2 {
+  display: flex; 
+  gap: 1.5vw;
+  width: 10vw;
+  height: 2vw;
+}
+#Answer4 h4{
+  font-weight: 300;
+  margin-left: 0;
+  padding-left: 2vw;
+  list-style-type: circle;
+}
+#Answer4 ul{
+  font-weight: 300;
+  margin-left: 0;
+  padding-left: 2vw;
+  list-style-type: circle;
+}
+
+
+
+.proBtn{
+  padding: 1vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pro-Btn{
+  z-index: 3;
+  width: 27.5vw;
+  height: 4.5vw;
+  display: flex;
+  font-size: 1.5vw;
+  font-weight: 500;
+  padding: 0.5vw 1vw;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  justify-content: center;
+  border: 0.2vw solid white;
+  color: rgb(38, 195, 48);
+  border-radius: 4vw;
+  background-color: rgb(0, 0, 0);
+  font-family: 'Inter', serif;
+  font-weight: 900;
+  transition: box-shadow 0.4s ease-in-out 0s;
+}
+.pro-Btn:hover{
+  animation: hover-shadow 0.8s 1;
+  box-shadow: 0vw 0vw 0.7vw 0.3vw rgba(255, 255, 255, 0.5), 
+        inset 0vw 0vw 0.7vw 0.4vw rgba(255, 255, 255, 0.5);
+}
+@keyframes hover-shadow {
+  0% {
+    box-shadow: 0vw 0vw 0.7vw 0.3vw rgba(255, 255, 255, 0.5), 
+          inset 0vw 0vw 0.7vw 0.4vw rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0vw 0vw 1vw 0.4vw rgba(255, 255, 255, 0.8), 
+          inset 0vw 0vw 1vw 0.4vw rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0vw 0vw 0.7vw 0.3vw rgba(255, 255, 255, 0.5), 
+          inset 0vw 0vw 0.7vw 0.4vw rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+.DYP {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.DYP-con {
+  position: relative;
+  padding: 3vw 0 2vw 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  gap: 0.5vw;
+  color: white;
+  border: 0.2vw solid white;
+  border-radius: 1.5vw;
+  font-family: 'Mohave', sans-serif;
+  z-index: 2;
+  background-color: rgb(14, 14, 14);
+  overflow: hidden;
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.6);
+}
+.are-red { color: red;}
+.who-green { color: greenyellow;}
+
+.DYP-con h2 {
+  font-weight: 500;
+}
+.DYP-con h4{
+  font-size: 1vw;
+  font-weight: 500;
+}
+.DYP-con .con-btn {
+  margin-top: 1vw;
+  display: flex;
+  gap: 1.75vw;
+}
+.con-btn .Con-Me {
+  border: dashed 0.11vw;
+  border-radius: 1.5vw;
+  width: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5vw;
+  gap: 0.25vw;
+  font-family: 'Mohave', sans-serif;
+  cursor: pointer;
+}
+
+.Con-Me h3 {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+.con-btn .Quick-CHat {
+  border-radius: 1.5vw;
+  border: none;
+  width: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5vw;
+  gap: 0.25vw;
+  font-family: 'Mohave', sans-serif;
+  cursor: pointer;
+}
+.Quick-CHat h3 {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+.red-Circle {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-color: black;
+  border: 0.5vw solid rgba(255, 0, 0, 0.808);
+  border-radius: 50%;
+  margin-top: -8vw;
+  margin-left: 50vw;
+  z-index: 1;
+  filter: blur(3px);
+}
+.green-Circle {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-color: black;
+  border: 0.5vw solid green;
+  border-radius: 50%;
+  margin-top: 2vw;
+  margin-left: -45vw;
+  z-index: 1;
+  filter: blur(2px);
+}
+
+/* Main Page 4 CSS */
+.main4 {
+  position: relative;
+  margin-top: -2vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, black, black, black, black);
+}
+.poster {
+  padding: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.postImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+.wodooDoll {
+  margin-top: 5vw;
+  margin-left: 6.5vw;
+  width: 47.5vw;
+  filter: drop-shadow(0vw 0vw 2vw rgba(255, 255, 255, 0.25));
+}
+.ContactLinks {
+  position: relative;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  gap: 0vw;
+}
+.links {
+  gap: 1vw;
+  padding: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.links:nth-child(1){transform: translate(1vw);}
+.links:nth-child(2){transform: translate(10vw);}
+.links:nth-child(3){transform: translate(-3vw);}
+.links:nth-child(4){transform: translate(7vw);}
+.links:nth-child(5){transform: translate(4vw); gap: 0.5vw;}
+
+.links h2 {
+  font-weight: 400;
+  font-size: 4.5vw;
+  font-style: italic;
+  font-family: 'Mohave', sans-serif;
+  color: #7E7E7E;
+  padding: 0;
+  transition: all 0.1s ease-in-out 0s;
+}
+.links #icon1 {
+  font-size: 7vw;
+  font-weight: 100;
+  color: #7E7E7E;
+  padding: 0;
+  transition: all 0.1s ease-in-out 0s;
+}
+.links #icon2 {
+  font-size: 5vw;
+  font-weight: 100;
+  color: #7E7E7E;
+  transition: all 0.1s ease-in-out 0s;
+}
+.links #icon3 {
+  font-size: 6vw;
+  font-weight: 100;
+  color: #7E7E7E;
+  transition: all 0.1s ease-in-out 0s;
+}
+.links #icon4 {
+  font-size: 7vw;
+  font-weight: 100;
+  color: #7E7E7E;
+  transition: all 0.1s ease-in-out 0s;
+}
+.links #icon5  {
+  font-size: 5vw;
+  font-weight: 100; 
+  color: #7E7E7E;
+  transition: all 0.1s ease-in-out 0s;
+}
+.noContact {
+  padding: 0vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2vw;
+}
+.huddyPic {
+  padding: 0vw 0vw 0vw 0vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.warn {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.warn1 {
+  margin-left: -34vw;
+  position: absolute;
+  width: 27.5vw;
+  z-index: 2;
+  margin-top: 36vw;
+}
+.warn2 {
+  margin-top: 59vw;
+  margin-left: 27vw;
+  position: absolute;
+  width: 42.5vw;
+  z-index: 4;
+}
+.bgRound {
+  width: 32.5VW;
+  margin-top: -4vw;
+  margin-left: 7vw;
+  position: absolute;
+  z-index: 1;
+  animation: rotate infinite linear 15s 0s;
+}
+
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.huddy {
+  width: 25VW;
+  position: absolute;
+  margin-top: 2.5vw;
+  margin-left: 0vw;
+  z-index: 3;
+}
+
+.lineDiv {
+  margin-top: 35vw;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transform: translateY(0.4vw);
+  height: 0.5vw;
+}
+.lineDiv .line {
+  width: 100vw;
+  height: 0.1vw;
+  opacity: 0.5;
+  transform: translateX(-2vw);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 7vw;
+  padding-bottom: 1vw;
+  gap: 5vw;
+  overflow-x: hidden;
+}
+.conLink1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conLink1 h3 {
+  font-size: 1.25vw;
+  font-weight: 500;
+  width: auto;
+  color: white;
+  font-style: italic;
+  font-family: 'Mohave', sans-serif;
+}
+.conLinks2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+.conLinks2 #links {
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: white;
+}
+.conLink3 {
+  width: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.conLink3 h3 {
+  font-size: 1.25vw;
+  font-weight: 600;
+  width: auto;
+  color: white;
+  font-style: italic;
+  font-family: 'Mohave', sans-serif;
+}
+
+
+.bottomContact{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, black 80%, rgba(41, 42, 45, 1));
+  
+}
+.BTT{
+  padding: 0.75vw 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgb(44, 40, 40);
+  cursor: pointer;
+}
+.BTT h2{
+  font-size: 1.25vw;
+  font-weight: 600;
+  letter-spacing: 0.075vw;
+  color: white;
+  font-style: italic;
+  font-family: 'Mohave', sans-serif;
+}
+.bottomLinks{
+  padding:0vw;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomContent{
+  padding: 1vw 0vw;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 12.5vw;
+  border-bottom: 0.1vw solid white;
+}
+.bottomContent .GTK, .GWU, .LUHY{
+  padding: 0.2vw; 
+}
+.bottomContent .GTK h2, .GWU h2, .LUHY h2{
+  color: white;
+  font-size: 0.9vw;
+  letter-spacing: 0.05vw;
+  font-weight: 300;
+  font-family: 'Jockey One', sans-serif;
+  padding: 1vw 0vw;
+  cursor: pointer;
+}
+.bottomContent .GTK h3, .GWU h3, .LUHY h3{
+  color: rgba(255, 255, 255, 0.801);
+  padding: 0.85vw 0vw;
+  font-size: 0.8vw;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+.bottomContent .GTK h3:hover, .GWU h3:hover, .LUHY h3:hover{
+  text-decoration: underline 0.05vw white;
+  text-underline-offset: 0.25vw;
+}
+.fbLink:hover{
+  text-decoration: underline 0.1vw white;
+  text-underline-offset: 0.25vw;
+}
+.webName{
+  padding: 1vw 0vw;
+  width: auto;
+  padding-bottom: 7.5vw;
+}
+.nameContent{
+  padding: 0.5vw 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.Logo1{
+  width: 4vw;
+}
+.nameContent h3{
+  font-family: 'Jolly Lodger', cursive;
+  font-weight: 700;
+  font-size: 2.5vw;
+  -webkit-text-stroke: 0.005vw rgb(0, 0, 0);
+  background-image: linear-gradient(to bottom, rgb(217, 213, 209), rgb(152, 152, 152), rgb(0, 0, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -0.1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive height adjustments */
+@media (max-width: 1024px) { /* Tablets */
+  .main1, .trans {
+    height: 50vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) { /* Mobile phones */
+  /* Body and HTML Reset */
+.Logo {
+  width: 25vw;
+  margin: 5vw 5vw;
+  z-index: 1;
+  position: relative;
+}
+.nav{
+  gap: 4vw;
+  padding: 0.5vw 3vw;
+  border-radius: 5vw;
+  right: 2vw;
+  top: 3.5vw;
+  font-size: 1.25vw;
+}
+.nav svg{
+  width:4vw;
+}
+.nav h2:hover{
+  text-decoration: underline 0.15vw solid black;
+  text-underline-offset: 0.5vw;
+}
+.main_part{
+  margin-top: 20vw;
+}
+.designBox{
+  width: 40vw;  
+  height: 27.03vw;
+  background-size: 120% 116.87%;
+}
+.designText{
+  line-height: 1.2;
+}
+.text1{
+  font-size: 5vw;
+}
+.text2{
+  font-size: 5vw;
+}
+.dis{
+  margin-top: 3vw;
+}
+.dis h2{
+  font-size: 2.5vw;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+}
+.QA{
+  padding: 0vw 1vw;
+}
+.ques{
+  width: 90vw;
+}
+.Question{
+  letter-spacing: 0.3vw;
+  font-size: 3vw;
+  text-underline-offset: 2vw;
+  text-decoration: underline 0.1vw;
+}
+.Answer{
+  line-height: 1.25;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+}
+#Question4{
+  font-size: 3vw;
+}
+#Question4 h3 {
+  text-decoration: underline 0.1vw white;
+}
+#Question4 .logo2 {
+  gap: 2vw;
+  width: 15vw;
+  height: 4vw;
+}
+.proBtn{
+  padding: 2vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pro-Btn{
+  width: 30vw;
+  height: 5vw;
+  font-size: 2.5vw;
+  font-weight: 500;
+  padding: 1vw 2vw;
+}
+.DYP-con {
+  padding: 4vw 0 3vw 0;
+  width: 80vw;
+  height: 20vw;
+  gap: 1vw;
+  margin-bottom: 5vw;
+}
+.DYP-con h2 {
+  font-size: 4.5vw;
+  z-index: 4;
+}
+.DYP-con h4{
+  font-size: 2vw;
+  z-index: 4;
+}
+.DYP-con .con-btn {
+  gap: 2vw;
+}
+.con-btn .Con-Me {
+  border: dashed 0.11vw;
+  width: 11vw;
+  height: 3vw;
+  gap: 0.5vw;
+}
+.Con-Me h3 {
+  font-size: 1.5vw;
+}
+.Con-Me i {
+  font-size: 2vw;
+}
+.con-btn .Quick-CHat {
+  width: 11vw;
+  height: 3vw;
+  gap: 0.5vw;
+}
+.Quick-CHat h3 {
+  font-size: 1.5vw;
+}
+.Quick-CHat i {
+  font-size: 2.5vw;
+}
+.red-Circle {
+  width: 20vw;
+  height: 20vw;
+  border: 1vw solid rgba(255, 0, 0, 0.808);
+  margin-top: -10vw;
+  margin-left: 80vw;
+  filter: blur(5px);
+}
+.green-Circle {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border: 1vw solid green;
+  margin-top: 6vw;
+  margin-left: -70vw;
+  z-index: 0;
+  filter: blur(5px);
+}
+/* Main Page 4 CSS */
+.main4{
+  margin-top: 120vw;
+}
+.postImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55vw;
+}
+.wodooDoll {
+  width: 55vw;
+}
+.ContactLinks {
+  width: 45vw;
+}
+.links h2 {
+  font-size: 5.25vw;
+}
+.links #icon1 {
+  font-size: 8vw;
+}
+.links #icon2 {
+  font-size: 6vw;
+}
+.links #icon3 {
+  font-size: 7vw;
+}
+.links #icon4 {
+  font-size: 8vw;
+}
+.links #icon5  {
+  font-size: 6vw;
+}
+.warn1 {
+  margin-left: -38vw;
+  width: 30vw;
+}
+.warn2 {
+  margin-top: 60vw;
+  margin-left: 29vw;
+  width: 45vw;
+}
+.bgRound {
+  width: 35VW;
+}
+.huddy {
+  width: 30VW;
+}
+.lineDiv {
+  margin-top: 41.5vw;
+  width: 90%;
+  height: 1vw;
+}
+.lineDiv .line {
+  height: 0.2vw;
+}
+.contact {
+  height: 10vw;
+}
+.conLink1 h3 {
+  font-size: 1.75vw;
+}
+.conLinks2 #links {
+  font-size: 2vw;
+}
+.conLink3 h3 {
+  font-size: 2vw;
+}
+.BTT{
+  padding: 1vw 0vw;
+}
+.BTT h2{
+  font-size: 2.5vw;
+  letter-spacing: 0.1vw;
+}
+.bottomContent{
+  padding: 2vw 0vw;
+  gap: 17.5vw;
+}
+.bottomContent .GTK, .GWU, .LUHY{
+  padding: 0.5vw; 
+}
+.bottomContent .GTK h2, .GWU h2, .LUHY h2{
+  font-size: 2vw;
+  letter-spacing: 0.1vw;
+}
+.bottomContent .GTK h3, .GWU h3, .LUHY h3{
+  padding: 1vw 0vw;
+  font-size: 1.8vw;
+}
+.bottomContent .GTK h3:hover, .GWU h3:hover, .LUHY h3:hover{
+  text-decoration: underline 0.1vw white;
+  text-underline-offset: 0.5vw;
+}
+.fbLink:hover{
+  text-decoration: underline 0.2vw white;
+  text-underline-offset: 0.5vw;
+}
+.webName{
+  padding: 2vw 0vw;
+  width: auto;
+  padding-bottom: 5vw;
+}
+.nameContent{
+  padding: 1vw 0vw;
+  gap: 2vw;
+}
+.Logo1{
+  width: 5vw;
+}
+.nameContent h3{
+  font-size: 3.5vw;
+  -webkit-text-stroke: 0.01vw rgb(0, 0, 0);
+  letter-spacing: 0.1vw;
+}
+}
+
+@media (max-width: 850px) {
+  .mainPreload {
+    flex-direction: column;
+  }
+} 
